@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="rlb-u6-IsR">
+            <objects>
+                <tabBarController id="h6S-EK-wf4" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="aoV-SN-6Ie">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="6ot-hO-SWM" kind="relationship" relationship="viewControllers" id="lRP-Fp-tIS"/>
+                        <segue destination="n8z-s6-8VP" kind="relationship" relationship="viewControllers" id="JSF-Bs-nm0"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tb4-0U-2ZU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-511" y="-175"/>
+        </scene>
+        <!--Pan-->
+        <scene sceneID="Ktu-gz-ZIz">
+            <objects>
+                <viewController id="n8z-s6-8VP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uRv-Du-KIy"/>
+                        <viewControllerLayoutGuide type="bottom" id="9FI-QH-WX6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cti-dw-rsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pan" image="item1" id="rMi-kd-tiX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="emP-mz-OdT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="258" y="221"/>
+        </scene>
+        <!--Tap-->
+        <scene sceneID="iZY-k0-jTw">
+            <objects>
+                <viewController id="6ot-hO-SWM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yfc-pm-EJT"/>
+                        <viewControllerLayoutGuide type="bottom" id="HKC-mp-cth"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kgU-j0-ixp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tap" image="item2" id="Ie2-Ky-vy2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uAS-6l-Ke2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="257" y="-438"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="item1" width="30" height="30"/>
+        <image name="item2" width="30" height="28"/>
+    </resources>
+</document>
